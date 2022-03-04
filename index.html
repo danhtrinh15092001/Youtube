@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="icon" href="./img/yb.png" />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <title>Youtube</title>
+    </head>
+    <body>
+        <div class="container-fluid" style="padding: 0; background-color: #ccc">
+            <!-- Header -->
+            <div class="header" style="position: fixed; background-color: #fff; width: 100%; z-index: 999999; padding: 0 6px">
+                <div class="d-flex justify-content-between" style="height: 56px">
+                    <div class="d-flex first-child" style="align-items: center">
+                        <button type="button" class="btn btn-menu-sm"><i class="fa-solid fa-bars"></i></button>
+                        <a class="nav-link" href="./index.html"><img class="nav-link__img" style="height: 56px" src="./img/logoyb.png" alt="Youtube" /></a>
+                    </div>
+                    <div class="d-flex between-child" style="align-items: center">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control" type="text" placeholder="Search" style="width: 572px; border-radius: 0px !important" />
+                            <button class="btn my-2 my-sm-0" type="submit" style="border: 1px solid #ccc; width: 50px; border-radius: 0px !important">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                            <button type="button" class="btn ml-2 btn-micro" style="border-radius: 99999px; background-color: rgb(243, 243, 243)"><i class="fa-solid fa-microphone"></i></button>
+                        </form>
+                    </div>
+                    <div class="d-flex last-child" style="align-items: center">
+                        <button type="button" class="btn"><i class="fa-solid fa-table-cells"></i></button>
+                        <button type="button" class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        <a class="nav-link" href="#">
+                            <div class="d-flex sign-up" style="align-items: center; border: 1px solid; padding: 4px">
+                                <i class="fa-solid fa-user"></i>
+                                <span style="margin-left: 4px">SIGN IN</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Micro -->
+            <div class="micro-show">
+                <div class="micro">
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-row justify-content-between align-items-center">
+                            <div class="micro__title mt-5">Search with your voice</div>
+                            <i class="fa-solid fa-xmark mr-4 micro__close"></i>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="micro__description mt-4">To search by voice, go to your browser settings and allow access to microphone</div>
+                            <button type="button" class="btn btn-micro btn-micro__active"><i class="fa-solid fa-microphone"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Side bar -->
+            <div class="sidebar-show">
+                <div class="sidebar">
+                    <div class="d-flex flex-row align-items-center sidebar__header">
+                        <button type="button" class="btn btn-menu-lg"><i class="fa-solid fa-bars"></i></button>
+                        <a class="nav-link" href="./index.html" style="padding: 8px 0"><img class="nav-link__img" style="height: 56px" src="./img/logoyb.png" alt="Youtube" /></a>
+                    </div>
+                    <div class="sidebar__container">
+                        <div class="d-flex flex-column" style="left: 0; width: 100%; border-bottom: 1px solid #ccc; padding: 8px 0">
+                            <div class="d-block sidebar__item active__side-bar">
+                                <a href="#" class="nav-link sidebar__item-link d-flex">
+                                    <i class="fa-solid fa-house-user"></i>
+                                    <span class="sidebar__item-title">Home</span>
+                                </a>
+                            </div>
+                            <div class="d-block sidebar__item">
+                                <a href="#" class="nav-link sidebar__item-link d-flex">
+                                    <i class="fa-brands fa-internet-explorer"></i>
+                                    <span class="sidebar__item-title">Explorer</span>
+                                </a>
+                            </div>
+                            <div class="d-block sidebar__item">
+                                <a href="#" class="nav-link sidebar__item-link d-flex">
+                                    <i class="fa-solid fa-camera-retro"></i>
+                                    <span class="sidebar__item-title">Shorts</span>
+                                </a>
+                            </div>
+                            <div class="d-block sidebar__item">
+                                <a href="#" class="nav-link sidebar__item-link d-flex">
+                                    <i class="fa-brands fa-youtube-square"></i>
+                                    <span class="sidebar__item-title">Subscriptions</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column" style="left: 0; width: 100; border-bottom: 1px solid #ccc; padding: 8px 0">
+                            <div class="d-block sidebar__item">
+                                <a href="#" class="nav-link sidebar__item-link d-flex">
+                                    <i class="fa-solid fa-book"></i>
+                                    <span class="sidebar__item-title">Library</span>
+                                </a>
+                            </div>
+                            <div class="d-block sidebar__item">
+                                <a href="#" class="nav-link sidebar__item-link d-flex">
+                                    <i class="fa-solid fa-clock-rotate-left"></i>
+                                    <span class="sidebar__item-title">History</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-column" style="left: 0; width: 100%; border-bottom: 1px solid #ccc; padding: 16px 32px">
+                            <div class="d-block sidebar__item">
+                                <span style="font-size: 14px; line-height: 1.6">Sign in like videos, comment, and subscribe.</span>
+                                <a class="nav-link" href="#">
+                                    <div class="d-flex sign-up" style="align-items: center; justify-content: center; border: 1px solid; padding: 4px">
+                                        <i class="fa-solid fa-user"></i>
+                                        <span style="margin-left: 4px">SIGN IN</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column" style="left: 0; width: 100; border-bottom: 1px solid #ccc; padding: 8px 0">
+                            <div class="d-block sidebar__item">
+                                <span style="margin-left: 4rem; color: rgb(116, 112, 112)">BEST OF MUSIC</span>
+                            </div>
+                            <div class="d-block sidebar__item">
+                                <a href="#" class="nav-link sidebar__item-link d-flex">
+                                    <i class="fa-solid fa-music"></i>
+                                    <span class="sidebar__item-title">Music</span>
+                                </a>
+                            </div>
+                            <div class="d-block sidebar__item">
+                                <a href="#" class="nav-link sidebar__item-link d-flex">
+                                    <i class="fa-solid fa-basketball"></i>
+                                    <span class="sidebar__item-title">Sports</span>
+                                </a>
+                            </div>
+                            <div class="d-block sidebar__item">
+                                <a href="#" class="nav-link sidebar__item-link d-flex">
+                                    <i class="fa-brands fa-fantasy-flight-games"></i>
+                                    <span class="sidebar__item-title">Gaming</span>
+                                </a>
+                            </div>
+                            <div class="d-block sidebar__item">
+                                <a href="#" class="nav-link sidebar__item-link d-flex">
+                                    <i class="fa-solid fa-newspaper"></i>
+                                    <span class="sidebar__item-title">News</span>
+                                </a>
+                            </div>
+                            <div class="d-block sidebar__item">
+                                <a href="#" class="nav-link sidebar__item-link d-flex">
+                                    <i class="fa-solid fa-life-ring"></i>
+                                    <span class="sidebar__item-title">Live</span>
+                                </a>
+                            </div>
+                            <div class="d-block sidebar__item">
+                                <a href="#" class="nav-link sidebar__item-link d-flex">
+                                    <i class="fa-solid fa-video"></i>
+                                    <span class="sidebar__item-title">360* Video</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column" style="left: 0; width: 100; border-bottom: 1px solid #ccc; padding: 8px 0">
+                            <div class="d-block sidebar__item">
+                                <a href="#" class="nav-link sidebar__item-link d-flex">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <span class="sidebar__item-title">Browse channels</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column" style="left: 0; width: 100; border-bottom: 1px solid #ccc; padding: 8px 0">
+                            <div class="d-block sidebar__item">
+                                <span style="margin-left: 1.5rem; color: rgb(116, 112, 112)">MORE FROM YOUTUBE</span>
+                            </div>
+                            <div class="d-block sidebar__item">
+                                <a href="#" class="nav-link sidebar__item-link d-flex">
+                                    <i class="fa-brands fa-steam-symbol"></i>
+                                    <span class="sidebar__item-title">Live</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column" style="left: 0; width: 100; border-bottom: 1px solid #ccc; padding: 8px 0">
+                            <div class="d-block sidebar__item">
+                                <a href="#" class="nav-link sidebar__item-link d-flex">
+                                    <i class="fa-solid fa-gear"></i>
+                                    <span class="sidebar__item-title">Settings</span>
+                                </a>
+                            </div>
+                            <div class="d-block sidebar__item">
+                                <a href="#" class="nav-link sidebar__item-link d-flex">
+                                    <i class="fa-solid fa-flag"></i>
+                                    <span class="sidebar__item-title">Report history</span>
+                                </a>
+                            </div>
+                            <div class="d-block sidebar__item">
+                                <a href="#" class="nav-link sidebar__item-link d-flex">
+                                    <i class="fa-solid fa-circle-question"></i>
+                                    <span class="sidebar__item-title">Help</span>
+                                </a>
+                            </div>
+                            <div class="d-block sidebar__item">
+                                <a href="#" class="nav-link sidebar__item-link d-flex">
+                                    <i class="fa-solid fa-comment-dollar"></i>
+                                    <span class="sidebar__item-title">Send feedback</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Small side bar -->
+            <div class="small__sidebar">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="d-block small__sidebar-list">
+                        <a href="#" class="nav-link d-flex flex-column align-items-center small__sidebar-link">
+                            <i class="fa-solid fa-house-user small__sidebar-icon"></i>
+                            <span class="small__sidebar-title mt-2">Home</span>
+                        </a>
+                    </div>
+                    <div class="d-block small__sidebar-list">
+                        <a href="#" class="nav-link d-flex flex-column align-items-center small__sidebar-link">
+                            <i class="fa-brands fa-internet-explorer small__sidebar-icon"></i>
+                            <span class="small__sidebar-title mt-2">Explore</span>
+                        </a>
+                    </div>
+                    <div class="d-block small__sidebar-list">
+                        <a href="#" class="nav-link d-flex flex-column align-items-center small__sidebar-link">
+                            <i class="fa-brands fa-youtube-square small__sidebar-icon"></i>
+                            <span class="small__sidebar-title mt-2">Shorts</span>
+                        </a>
+                    </div>
+                    <div class="d-block small__sidebar-list">
+                        <a href="#" class="nav-link d-flex flex-column align-items-center small__sidebar-link">
+                            <i class="fa-brands fa-youtube small__sidebar-icon"></i>
+                            <span class="small__sidebar-title mt-2">Subscriptions</span>
+                        </a>
+                    </div>
+                    <div class="d-block small__sidebar-list">
+                        <a href="#" class="nav-link d-flex flex-column align-items-center small__sidebar-link">
+                            <i class="fa-solid fa-book small__sidebar-icon"></i>
+                            <span class="small__sidebar-title mt-2">Libary</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Scroll container -->
+            <div class="scroll-container">
+                <div class="d-flex flex-row align-items-center" style="height: 56px; padding: 0 4px">
+                    <a href="#" class="nav-link mr-3 border scroll-container__item active" style="border-radius: 99px; padding: 4px 14px">
+                        <span>All</span>
+                    </a>
+                    <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                        <span>Young music</span>
+                    </a>
+                    <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                        <span>Lo-fi</span>
+                    </a>
+                    <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                        <span>Nobi Nobita</span>
+                    </a>
+                    <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                        <span>Martial Arts Movies</span>
+                    </a>
+                    <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                        <span>Playlist</span>
+                    </a>
+                    <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                        <span>Truong Giang</span>
+                    </a>
+                    <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                        <span>Humans</span>
+                    </a>
+                    <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                        <span>Manga</span>
+                    </a>
+                    <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                        <span>Eating</span>
+                    </a>
+                    <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                        <span>Balls</span>
+                    </a>
+                    <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                        <span>Asian Music</span>
+                    </a>
+                    <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                        <span>Live</span>
+                    </a>
+                    <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                        <span>Lessons</span>
+                    </a>
+                    <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                        <span>Role-Playing Games</span>
+                    </a>
+                    <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                        <span>Recently uploaded</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Content video -->
+            <div class="content">
+                <div class="row video__content justify-content-between align-items-center"></div>
+            </div>
+        </div>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+            integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js
+        "></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js
+        "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js
+        "></script>
+        <script src="./assets/js/java.js"></script>
+    </body>
+</html>

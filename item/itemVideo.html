@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="icon" href="../img/yb.png" />
+        <link rel="stylesheet" href="./assets/css/detail.css" />
+        <title>Youtube</title>
+    </head>
+    <body>
+        <div class="container-fluid" style="padding: 0">
+            <!-- Header -->
+            <div class="header" style="position: fixed; background-color: #fff; width: 100%; z-index: 999999; padding: 0 6px">
+                <div class="d-flex justify-content-between" style="height: 56px">
+                    <div class="d-flex first-child" style="align-items: center">
+                        <button type="button" class="btn btn-menu-sm"><i class="fa-solid fa-bars"></i></button>
+                        <a class="nav-link" href="../index.html"><img class="nav-link__img" style="height: 56px" src="../img/logoyb.png" alt="Youtube" /></a>
+                    </div>
+                    <div class="d-flex between-child" style="align-items: center">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control" type="text" placeholder="Search" style="width: 572px; border-radius: 0px !important" />
+                            <button class="btn my-2 my-sm-0" type="submit" style="border: 1px solid #ccc; width: 50px; border-radius: 0px !important">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                            <button type="button" class="btn ml-2 btn-micro" style="border-radius: 99999px; background-color: rgb(243, 243, 243)"><i class="fa-solid fa-microphone"></i></button>
+                        </form>
+                    </div>
+                    <div class="d-flex last-child" style="align-items: center">
+                        <button type="button" class="btn"><i class="fa-solid fa-table-cells"></i></button>
+                        <button type="button" class="btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                        <a class="nav-link" href="#">
+                            <div class="d-flex sign-up" style="align-items: center; border: 1px solid; padding: 4px">
+                                <i class="fa-solid fa-user"></i>
+                                <span style="margin-left: 4px">SIGN IN</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Micro -->
+            <div class="micro-show">
+                <div class="micro">
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-row justify-content-between align-items-center">
+                            <div class="micro__title mt-5">Search with your voice</div>
+                            <i class="fa-solid fa-xmark mr-4 micro__close"></i>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="micro__description mt-4">To search by voice, go to your browser settings and allow access to microphone</div>
+                            <button type="button" class="btn btn-micro btn-micro__active"><i class="fa-solid fa-microphone"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add video -->
+            <div class="content"></div>
+            <!-- Description detaul video -->
+            <div class="description row">
+                <div class="d-flex flex-column col-md-7 mt-3 ml-5" style="border-bottom: 1px solid #ccc">
+                    <div class="d-flex flex-row description__title align-items-center"></div>
+                    <div class="d-flex flex-row mt-2 mb-2 description__info justify-content-between">
+                        <div class="description__info-views">164,769,001 views...</div>
+                        <div class="d-flex flex-row description__info-app align-items-center justify-content-center">
+                            <div class="d-flex flex-row description__info-work">
+                                <i class="description__info-icon fa-regular fa-thumbs-up"></i>
+                                <span class="description__info-edit">20M</span>
+                            </div>
+                            <div class="d-flex flex-row description__info-work">
+                                <i class="description__info-icon fa-regular fa-thumbs-down"></i>
+                                <span class="description__info-edit">DISLIKE</span>
+                            </div>
+                            <div class="d-flex flex-row description__info-work">
+                                <i class="description__info-icon fa-regular fa-share-from-square"></i>
+                                <span class="description__info-edit">SHARE</span>
+                            </div>
+                            <div class="d-flex flex-row description__info-work">
+                                <i class="description__info-icon fa-solid fa-paperclip"></i>
+                                <span class="description__info-edit">CLIP</span>
+                            </div>
+                            <div class="d-flex flex-row description__info-work">
+                                <i class="description__info-icon fa-solid fa-list-check"></i>
+                                <span class="description__info-edit">SAVE</span>
+                            </div>
+
+                            <div class="d-flex flex-row description__info-work">
+                                <i class="description__info-icon fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- List video propose -->
+                <div class="d-flex flex-column col-md-4">
+                    <!-- Scroll -->
+                    <div class="scroll-container">
+                        <div class="d-flex flex-row align-items-center" style="height: 56px; padding: 0 4px">
+                            <a href="#" class="nav-link mr-3 border scroll-container__item active" style="border-radius: 99px; padding: 4px 14px">
+                                <span>All</span>
+                            </a>
+                            <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                                <span>Young music</span>
+                            </a>
+                            <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                                <span>Lo-fi</span>
+                            </a>
+                            <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                                <span>Nobi Nobita</span>
+                            </a>
+                            <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                                <span>Martial Arts Movies</span>
+                            </a>
+                            <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                                <span>Playlist</span>
+                            </a>
+                            <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                                <span>Truong Giang</span>
+                            </a>
+                            <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                                <span>Humans</span>
+                            </a>
+                            <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                                <span>Manga</span>
+                            </a>
+                            <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                                <span>Eating</span>
+                            </a>
+                            <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                                <span>Balls</span>
+                            </a>
+                            <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                                <span>Asian Music</span>
+                            </a>
+                            <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                                <span>Live</span>
+                            </a>
+                            <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                                <span>Lessons</span>
+                            </a>
+                            <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                                <span>Role-Playing Games</span>
+                            </a>
+                            <a href="#" class="nav-link mr-3 border scroll-container__item" style="border-radius: 99px; padding: 4px 14px">
+                                <span>Recently uploaded</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- User subcribed -->
+                <div class="d-flex flex-row col-md-7 mt-3 ml-5 justify-content-between" style="border-bottom: 1px solid #ccc; margin-bottom: 38px">
+                    <div class="d-flex flex-row user">
+                        <div class="d-flex user__img">
+                            <a href="#" class="nav-link user__img-link"> </a>
+                        </div>
+                        <div class="d-flex flex-column user__info"></div>
+                    </div>
+                    <div class="d-flex flex-row subcribed align-items-start">
+                        <button type="button" class="btn btn-danger subscribed__btn">SUBSCRIBERS</button>
+                        <i class="fa-regular fa-bell subscribed__icon subscribed__icon-show"></i>
+                    </div>
+                </div>
+                <!-- List video propose -->
+                <div class="d-flex flex-column col-md-4 video">
+                    <div class="d-flex flex-row video__item">
+                        <div class="d-flex video__item-img">
+                            <img src="../img/yb.png" alt="anh" class="video__item-img-avt img-thumbnail" />
+                        </div>
+                        <div class="d-flex flex-column video__item-info justify-content-between align-items-center">
+                            <a href="#" class="nav-link video__item-info-link">
+                                <span class="video__item-title">BIGBANG - LOSER M/V</span>
+                                <div class="video__item-name">BIGBANG</div>
+                                <div class="d-flex flex-row align-items-center">
+                                    <div class="video__item-views">1B views</div>
+                                    <div class="video__item-time">3 years ago</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row video__item">
+                        <div class="d-flex video__item-img">
+                            <img src="../img/yb.png" alt="anh" class="video__item-img-avt img-thumbnail" />
+                        </div>
+                        <div class="d-flex flex-column video__item-info justify-content-between align-items-center">
+                            <a href="#" class="nav-link video__item-info-link">
+                                <span class="video__item-title">BIGBANG - LOSER M/V</span>
+                                <div class="video__item-name">BIGBANG</div>
+                                <div class="d-flex flex-row align-items-center">
+                                    <div class="video__item-views">1B views</div>
+                                    <div class="video__item-time">3 years ago</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+            integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js
+        "></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js
+        "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js
+        "></script>
+        <script src="./assets/js/detail.js"></script>
+    </body>
+</html>

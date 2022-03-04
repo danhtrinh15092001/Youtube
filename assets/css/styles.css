@@ -1,0 +1,370 @@
+/* Public */
+body {
+    font-family: "Roboto", "Arial", sans-serif !important;
+}
+.active {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.active__side-bar {
+    background-color: #ccc !important;
+}
+
+html {
+    background-color: rgb(245, 241, 241);
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgb(216, 210, 210);
+}
+
+html::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Private */
+
+/* Header */
+.btn-menu-sm {
+    margin-left: 6%;
+    border-radius: 999999px;
+    background-color: #fff;
+}
+
+.btn-menu-sm:hover {
+    background-color: #ccc;
+    border-radius: 999999px;
+}
+
+/* Micro */
+.micro-show {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 9999999;
+    display: none;
+}
+
+.micro {
+    background-color: #fff;
+    margin: 2rem auto auto auto;
+    width: 50%;
+    height: 400px;
+}
+
+.micro__title {
+    font-size: 24px;
+    margin-left: 4.4rem;
+}
+
+.micro__close {
+    font-size: 24px;
+    padding: 10px;
+    height: 44px;
+}
+
+.micro__close:hover {
+    cursor: pointer;
+}
+
+.micro__description {
+    font-size: 14px;
+    color: rgb(126, 123, 123);
+}
+
+.btn-micro__active {
+    border-radius: 99999px;
+    background-color: rgb(207, 203, 203);
+    height: 70px;
+    width: 70px;
+    font-size: 25px;
+    margin-top: 8rem;
+}
+/* Side bar */
+.open {
+    display: block !important;
+}
+.sidebar__item {
+}
+
+.sidebar__item-link {
+    align-items: center;
+    color: #000;
+    font-weight: 400;
+}
+
+.sidebar__item-link:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.sidebar__item-title {
+    margin-left: 2rem;
+}
+
+.sidebar-show {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 9999999;
+    display: none;
+}
+
+.sidebar {
+    width: 18%;
+    background-color: #fff;
+    /* animation: modalFadeIn ease 0.4s; */
+}
+
+.sidebar__container {
+    overflow-y: scroll;
+    max-height: 100vh;
+    padding-top: 56px;
+}
+
+.sidebar__container::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+}
+
+.sidebar__container:hover::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgb(216, 210, 210);
+}
+
+.sidebar__container::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #fff;
+    margin-top: 4rem;
+}
+
+.sidebar__container::-webkit-scrollbar {
+    width: 10px;
+}
+
+.sidebar__header {
+    position: fixed;
+    background-color: #fff;
+    height: 56px;
+    width: 18%;
+}
+
+.btn-menu-lg {
+    margin-left: 0.4rem;
+    border-radius: 999999px;
+    background-color: #fff;
+}
+
+.btn-menu-lg:hover {
+    background-color: #ccc;
+    border-radius: 999999px;
+}
+
+/* Small sidebar */
+.small__sidebar {
+    position: fixed;
+    top: 56px;
+    background-color: #fff;
+    width: 6%;
+    bottom: 0;
+}
+
+.small__sidebar-list {
+    width: 100%;
+}
+
+.small__sidebar-link {
+    color: #000;
+    padding: 16px 0 14px;
+}
+
+.small__sidebar-link:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.small__sidebar-icon {
+    font-size: 18px;
+}
+
+.small__sidebar-title {
+    font-size: 10px;
+}
+
+/* Scroll container */
+
+.scroll-container {
+    position: fixed;
+    height: 56px;
+    z-index: 99999;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    top: 56px;
+    right: 0;
+    width: calc(100% - 75px);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-color: #fff;
+}
+
+.scroll-container span {
+    word-wrap: none;
+    white-space: nowrap;
+}
+
+.scroll-container a {
+    background-color: rgb(240, 238, 238);
+    color: #000;
+    font-size: 14px;
+    border: 1px solid #ccc !important;
+}
+
+.scroll-container a:hover {
+    background-color: #ccc;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgb(216, 210, 210);
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.scroll-container::-webkit-scrollbar {
+    height: 0px;
+}
+
+/* Content video */
+
+.content {
+    position: absolute;
+    margin-top: 7rem;
+    width: calc(100% - 80px);
+    margin-left: 6%;
+    padding-left: 1%;
+    padding-right: 3%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.thumbnail {
+    padding: 0;
+    width: 100%;
+}
+
+.thumbnail-avt {
+    padding: 0;
+    margin: 8px 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 999999px;
+    object-fit: cover;
+}
+
+.video__info-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    line-height: 1.3rem;
+    padding-bottom: 4px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.video__info-title:hover {
+    color: #000;
+}
+
+.video__content-list {
+    margin-bottom: 2.5rem;
+    position: relative;
+    height: 250px;
+}
+
+.video__content-list-zoom {
+    transition: 0s;
+    opacity: 0;
+    position: absolute;
+    transform: scale(1.25);
+    top: 15%;
+    left: 12.5%;
+    z-index: 50;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.video__content-img:hover {
+    cursor: pointer;
+}
+
+.video__content-list-zoom .video__info-title {
+    font-size: 12px !important;
+}
+
+.video__content-list-zoom .video__info-day,
+.video__content-list-zoom .video__info-view,
+.video__content-list-zoom .video__info-user {
+    font-size: 10px !important;
+}
+
+.video__content-img:hover .video__content-list-zoom {
+    transition-delay: 2s;
+    opacity: 1;
+}
+
+.video__info-user {
+    font-size: 12px;
+    color: rgb(97, 93, 93);
+    padding: 0 4px 0 16px;
+}
+
+.video__info-user:hover {
+    color: rgb(97, 93, 93);
+}
+
+.video__info-view::after {
+    content: "•";
+    margin: 0 4px;
+}
+
+/* Animation */
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes modalFadeOut {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+}
